@@ -46,7 +46,13 @@ export const Battle = ({ onGameEnd }) => {
   }, [playerHealth, opponentHealth, onGameEnd]);
 
   return (
-    <>
+    <div
+      style={{
+        transform: 'scale(0.75)',
+        width: '100vw',
+        marginTop: '-100px',
+      }}
+    >
       <div className={styles.opponent}>
         <div className={styles.summary}>
           <PlayerSummary
@@ -108,6 +114,6 @@ export const Battle = ({ onGameEnd }) => {
           )}
         </div>
       </div>
-    </>
+    </div>
   );
 };

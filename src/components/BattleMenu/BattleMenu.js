@@ -9,7 +9,7 @@ export const BattleMenu = ({ asks, onAttack, onMagic, onHeal }) => {
             <div
               onClick={() => {
                 onAttack();
-                alert("C'est bon reponse!🥰 You Attack! 🗡️");
+                alert("C'est une bonne réponse! 🥰 Vous attaquez! 🗡️");
               }}
               className={styles.option}
             >
@@ -19,7 +19,7 @@ export const BattleMenu = ({ asks, onAttack, onMagic, onHeal }) => {
             <div
               onClick={() => {
                 onHeal();
-                alert("C'est bon reponse!🥰 You are healing 💓 ");
+                alert("C'est une bonne réponse! 🥰 Vous vous soignez 💓");
               }}
               className={styles.option}
             >
@@ -31,7 +31,7 @@ export const BattleMenu = ({ asks, onAttack, onMagic, onHeal }) => {
             <div
               onClick={() => {
                 onMagic();
-                alert("C'est mal reponse 😥 weak attack 🤏");
+                alert("C'est une mauvaise réponse 😥 Attaque faible 🤏");
               }}
               className={styles.option}
             >
