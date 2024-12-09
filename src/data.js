@@ -176,4 +176,78 @@ export const questions = [
       },
     ],
   },
+  {
+    id: 9,
+    question: 'A quoi doit-on faire attention dans un mail ?',
+    type: 'choix_unique',
+    reponses: [
+      {
+        texte:
+          "Fautes d'orthographes, l'adresse de l'expéditeur, lien qu'il y a dans le mail",
+        correcte: true,
+      },
+      {
+        texte:
+          "Fautes d'orthographes, l'adresse de l'expéditeur, lien qu'il y a dans le mail, destinataire",
+        correcte: false,
+      },
+      {
+        texte: "L'adresse de l'expéditeur, lien qu'il y a dans le mail",
+        correcte: false,
+      },
+      {
+        texte: 'Destinataire, lien dans le mail',
+        correcte: false,
+      },
+    ],
+  },
+  {
+    id: 10,
+    question:
+      'Pourquoi est-il important de mettre à jour vos logiciels régulièrement ?',
+    type: 'choix_unique',
+    reponses: [
+      {
+        texte: "Pour améliorer l'apparence du logiciel",
+        correcte: false,
+      },
+      {
+        texte:
+          'Pour corriger les failles de sécurité et améliorer la performance',
+        correcte: true,
+      },
+      {
+        texte: "Parce que les mises à jour coûtent de l'argent",
+        correcte: false,
+      },
+      {
+        texte: 'Pour que votre ordinateur soit plus rapide',
+        correcte: false,
+      },
+    ],
+  },
+  {
+    id: 11,
+    question: 'Comment reconnaître une page web sécurisée ?',
+    type: 'choix_unique',
+    reponses: [
+      {
+        texte: "Elle commence par 'http://' dans l'URL",
+        correcte: false,
+      },
+      {
+        texte:
+          "Elle commence par 'https://' et a un cadenas dans la barre d'adresse",
+        correcte: true,
+      },
+      {
+        texte: 'Elle a une couleur de fond verte',
+        correcte: false,
+      },
+      {
+        texte: 'Elle est accessible uniquement par abonnement payant',
+        correcte: false,
+      },
+    ],
+  },
 ];
