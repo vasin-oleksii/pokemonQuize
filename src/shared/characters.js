@@ -5,7 +5,7 @@ export const playerStats = {
   img: 'https://www.pokepedia.fr/images/thumb/1/1f/Yeux_Tarsal.png/150px-Yeux_Tarsal.png',
 
   magic: 32,
-  attack: 50,
+  attack: 66,
   defense: 30,
   magicDefense: 30,
 };

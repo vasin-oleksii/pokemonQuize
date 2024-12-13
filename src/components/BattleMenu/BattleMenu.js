@@ -5,7 +5,7 @@ export const BattleMenu = ({ asks, onAttack, onMagic, onHeal }) => {
     <div className={styles.main}>
       {asks.reponses.map(ask => {
         if (ask.correcte === true) {
-          return Math.random() > 0.5 ? (
+          return Math.random() > 0.33 ? (
             <div
               onClick={() => {
                 onAttack();
