@@ -8,7 +8,6 @@ import { questions } from 'data';
 
 export const Battle = ({ onGameEnd }) => {
   const [sequence, setSequence] = useState({});
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [asks, setAsks] = useState(questions[0]);
 
   const {
@@ -21,17 +20,13 @@ export const Battle = ({ onGameEnd }) => {
   } = useBattleSequence(sequence);
 
   useEffect(() => {
-    function getNextQuestion() {
-      const nextIndex = (currentQuestionIndex + 1) % questions.length;
-      setCurrentQuestionIndex(nextIndex);
-      setAsks(questions[nextIndex]);
+    function getRandomQuestion() {
+      const randomIndex = Math.floor(Math.random() * questions.length);
+      setAsks(questions[randomIndex]);
     }
 
-    if (opponentHealth < opponentStats.maxHealth) {
-      // Trigger on health change or a specific condition
-      getNextQuestion();
-    }
-  }, [opponentHealth, currentQuestionIndex]);
+    getRandomQuestion();
+  }, [opponentHealth]);
 
   const aiChoice = useAIOpponent(turn);
 
