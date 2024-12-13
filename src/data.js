@@ -1,251 +1,214 @@
 export const questions = [
   {
-    id: 1,
-    question:
-      'Quelle est le pourcentage de faille humaine dans la cybersécurité en France 2023 ?',
+    id: 12,
+    question: 'Qu’est-ce qu’un pare-feu ?',
     type: 'choix_unique',
     reponses: [
       {
-        texte: '74%',
+        texte: 'Un logiciel qui empêche les accès non autorisés au réseau',
         correcte: true,
       },
       {
-        texte: '54%',
+        texte: 'Un antivirus',
         correcte: false,
       },
       {
-        texte: '33%',
+        texte: 'Un mot de passe complexe',
         correcte: false,
       },
       {
-        texte: '92%',
+        texte: 'Un système de sauvegarde automatique',
         correcte: false,
       },
     ],
   },
   {
-    id: 2,
-    question: 'Que faire en cas de ransomware ?',
+    id: 13,
+    question: 'Quel est le principal objectif d’un antivirus ?',
     type: 'choix_unique',
     reponses: [
       {
-        texte: "Reboot l'ordinateur",
+        texte: 'Supprimer les spams',
         correcte: false,
       },
       {
-        texte: "Informer les forces de l'ordre",
+        texte:
+          'Détecter, prévenir et supprimer les logiciels malveillants',
         correcte: true,
       },
       {
-        texte: 'Se débarrasser du matériel',
+        texte: 'Améliorer la vitesse de l’ordinateur',
         correcte: false,
       },
       {
-        texte: 'Payer la rançon',
+        texte: 'Protéger les données dans le cloud',
         correcte: false,
       },
     ],
   },
   {
-    id: 3,
-    question: "Est-il possible d'infecter un ordinateur via un mail ?",
-    type: 'choix_unique',
-    reponses: [
-      {
-        texte: 'Faux',
-        correcte: false,
-      },
-      {
-        texte: 'Vrai',
-        correcte: true,
-      },
-    ],
-  },
-  {
-    id: 4,
-    question: 'Que faire en cas de clé USB trouvée au travail ?',
+    id: 14,
+    question: 'Comment sécuriser un réseau Wi-Fi domestique ?',
     type: 'choix_multiple',
     reponses: [
       {
-        texte:
-          "Regarder son contenu afin d'en déterminer le propriétaire au travail",
+        texte: 'Utiliser un mot de passe fort',
+        correcte: true,
+      },
+      {
+        texte: 'Désactiver le SSID (nom du réseau)',
         correcte: false,
       },
       {
-        texte: 'La jeter',
+        texte: 'Activer le chiffrement WPA3',
         correcte: true,
       },
       {
-        texte: 'La donner a son responsable hiérarchique',
-        correcte: true,
-      },
-      {
-        texte:
-          "Regarder son contenu afin d'en déterminer le propriétaire chez soi",
+        texte: 'Partager le mot de passe avec tout le monde',
         correcte: false,
       },
     ],
   },
   {
-    id: 5,
-    question: "Qu'est ce que le phishing ?",
+    id: 15,
+    question: 'Qu’est-ce qu’une attaque par déni de service (DDoS) ?',
     type: 'choix_unique',
     reponses: [
       {
-        texte: "Infecter un ordinateur a  l'aide d'un lien frauduleux",
-        correcte: false,
-      },
-      {
-        texte: 'Une technique de pêche ancestrale',
-        correcte: false,
-      },
-      {
-        texte: 'Infecter un ordinateur via une clé usb',
-        correcte: false,
-      },
-      {
         texte:
-          "Infecter un ordinateur a l'aide d'un faux site internet (ex: faux Facebook)",
+          'Une attaque visant à surcharger un serveur pour le rendre inaccessible',
         correcte: true,
+      },
+      {
+        texte: 'Une méthode pour pirater un mot de passe',
+        correcte: false,
+      },
+      {
+        texte: 'Une technique pour effacer des données sur un disque dur',
+        correcte: false,
+      },
+      {
+        texte: "Une attaque ciblant les utilisateurs d'un réseau",
+        correcte: false,
       },
     ],
   },
   {
-    id: 6,
+    id: 16,
+    question: 'Quel est le risque d’utiliser un réseau Wi-Fi public ?',
+    type: 'choix_unique',
+    reponses: [
+      {
+        texte:
+          'Les pirates peuvent intercepter les données transmises sur le réseau',
+        correcte: true,
+      },
+      {
+        texte: "L'accès à Internet peut être limité",
+        correcte: false,
+      },
+      {
+        texte: "Cela consomme plus de batterie sur l'appareil",
+        correcte: false,
+      },
+      {
+        texte: 'Le Wi-Fi public est toujours sécurisé',
+        correcte: false,
+      },
+    ],
+  },
+  {
+    id: 17,
     question:
-      'A quelle fréquence est-il préconiser de changer son mot de passe ?',
+      'Pourquoi est-il déconseillé de cliquer sur des liens dans des emails non sollicités ?',
     type: 'choix_unique',
     reponses: [
       {
-        texte: '3-6 mois',
+        texte: 'Ils peuvent contenir des logiciels malveillants',
         correcte: true,
       },
       {
-        texte: 'Jamais',
+        texte: "Ils augmentent la mémoire utilisée par l'ordinateur",
         correcte: false,
       },
       {
-        texte: '2-3 ans',
+        texte: "Ils bloquent automatiquement l'accès à Internet",
         correcte: false,
       },
       {
-        texte: 'Tout les mois',
+        texte: 'Ils ralentissent votre ordinateur',
         correcte: false,
       },
     ],
   },
   {
-    id: 7,
-    question: "Qu'est ce qu'un mot de passe fort ?",
+    id: 18,
+    question: "Que signifie l'acronyme VPN ?",
     type: 'choix_unique',
     reponses: [
       {
-        texte:
-          '12 caractères maximum, avec minuscule et majuscule et caractère spéciaux',
-        correcte: false,
-      },
-      {
-        texte:
-          '12 caractères maximum, avec minuscule et majuscule et caractère spéciaux',
+        texte: 'Virtual Private Network',
         correcte: true,
       },
       {
-        texte:
-          '8 caractères, avec minuscule et majuscule et caractère spéciaux',
+        texte: 'Verified Personal Network',
         correcte: false,
       },
       {
-        texte:
-          '12 caractères maximum, avec minuscule et majuscule ou caractère spéciaux',
+        texte: 'Virtual Protected Node',
+        correcte: false,
+      },
+      {
+        texte: 'Verified Protocol Network',
         correcte: false,
       },
     ],
   },
   {
-    id: 8,
-    question: "Qu'est ce qu'un mot de passe fort ?",
-    type: 'choix_unique',
-    reponses: [
-      {
-        texte: 'Vrai',
-        correcte: false,
-      },
-      {
-        texte: 'Faux',
-        correcte: true,
-      },
-    ],
-  },
-  {
-    id: 9,
-    question: 'A quoi doit-on faire attention dans un mail ?',
-    type: 'choix_unique',
-    reponses: [
-      {
-        texte:
-          "Fautes d'orthographes, l'adresse de l'expéditeur, lien qu'il y a dans le mail",
-        correcte: true,
-      },
-      {
-        texte:
-          "Fautes d'orthographes, l'adresse de l'expéditeur, lien qu'il y a dans le mail, destinataire",
-        correcte: false,
-      },
-      {
-        texte: "L'adresse de l'expéditeur, lien qu'il y a dans le mail",
-        correcte: false,
-      },
-      {
-        texte: 'Destinataire, lien dans le mail',
-        correcte: false,
-      },
-    ],
-  },
-  {
-    id: 10,
+    id: 19,
     question:
-      'Pourquoi est-il important de mettre à jour vos logiciels régulièrement ?',
+      'Quelle est la meilleure pratique pour gérer les mots de passe ?',
     type: 'choix_unique',
     reponses: [
       {
-        texte: "Pour améliorer l'apparence du logiciel",
+        texte: 'Les écrire dans un fichier texte sur son ordinateur',
         correcte: false,
       },
       {
-        texte:
-          'Pour corriger les failles de sécurité et améliorer la performance',
+        texte: 'Utiliser un gestionnaire de mots de passe',
         correcte: true,
       },
       {
-        texte: "Parce que les mises à jour coûtent de l'argent",
+        texte: 'Utiliser le même mot de passe pour tous ses comptes',
         correcte: false,
       },
       {
-        texte: 'Pour que votre ordinateur soit plus rapide',
+        texte: 'Ne jamais changer ses mots de passe',
         correcte: false,
       },
     ],
   },
   {
-    id: 11,
-    question: 'Comment reconnaître une page web sécurisée ?',
+    id: 20,
+    question:
+      "Pourquoi est-il risqué d'utiliser des clés USB non sécurisées ?",
     type: 'choix_unique',
     reponses: [
       {
-        texte: "Elle commence par 'http://' dans l'URL",
-        correcte: false,
-      },
-      {
         texte:
-          "Elle commence par 'https://' et a un cadenas dans la barre d'adresse",
+          'Elles peuvent contenir des logiciels malveillants ou des virus',
         correcte: true,
       },
       {
-        texte: 'Elle a une couleur de fond verte',
+        texte: 'Elles sont lentes à transférer les fichiers',
         correcte: false,
       },
       {
-        texte: 'Elle est accessible uniquement par abonnement payant',
+        texte: 'Elles effacent automatiquement les données après usage',
+        correcte: false,
+      },
+      {
+        texte: 'Elles sont interdites par la loi',
         correcte: false,
       },
     ],
